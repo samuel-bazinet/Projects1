@@ -10,3 +10,6 @@ helloWorld.cpp
 stats.cpp
     Tired of writting the same numbers over and over? 
     This program will help you reduce the amount of time it takes to solve a question
+
+discTest.cpp
+    Just a program to mass test statements
