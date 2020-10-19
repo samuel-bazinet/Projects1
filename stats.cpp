@@ -5,11 +5,6 @@ double binoSeries();
 
 long factorial(int n);
 
-int main() {
-
-    return 0;
-}
-
 double binomial() {
     double ans;
 
