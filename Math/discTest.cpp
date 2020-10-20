@@ -29,12 +29,48 @@ void testMul(int max, int n, int counter) {
 
 
     testMul(max, 2*n, counter + 1);
-    return;
+    
+}
+
+void testRecur(int n, int max, int counter) {
+
+    std::cout << 3*n << std::endl; 
+
+    if (max == counter) {    
+        return;
+    }
+
+    testRecur(3*n,max, counter + 1);
+
+}
+
+void testRecur(int a1, int a2, int max, int counter) {
+
+    std::cout << counter*a1 + pow(counter,2)*a2 << std::endl;
+
+    if (max == counter) {
+        return;
+    }
+
+    testRecur( counter*a1 + pow(counter,2)*a2, a1, max, counter+1);
+
+}
+
+void testRecur(int a1, int a2, int a3, int max, int counter) {
+
+    std::cout << a1 + a3 << std::endl;
+
+    if (max == counter) {
+        return;
+    }
+
+    testRecur(a1 + a3, a1, a2, max, counter + 1);
+
 }
 
 int main() {
-    
-    testMul(10,3,0);
+
+    testRecur(100,10,1);    
 
     return 0;
 }
