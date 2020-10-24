@@ -2,7 +2,12 @@ First round of projects
 
 These projects were done between Oct 2020 and april 2021
 
-Here's a summary of the current programs:
+Here's are the major projects:
+
+CharCount:
+    This program will experiment with ways to count characters in a text using various implementations of data structures
+
+Here's a summary of the current standalone programs:
 
 helloWorld.cpp 
     Just a test and a humble beginning 
