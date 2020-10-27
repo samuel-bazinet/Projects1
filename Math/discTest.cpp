@@ -68,9 +68,21 @@ void testRecur(int a1, int a2, int a3, int max, int counter) {
 
 }
 
+int gcd(int a, int b) {
+    int x = a;
+    int y = b;
+    while (y != 0) {
+        int r = x%y;
+        x = y;
+        y = r;
+    }
+    return x;
+}
+
 int main() {
 
-    testRecur(100,10,1);    
+    //testRecur(100,10,1);  
+    std::cout << gcd(12036, 1020) << std::endl;  
 
     return 0;
 }
