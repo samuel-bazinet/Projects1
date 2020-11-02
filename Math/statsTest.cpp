@@ -3,9 +3,8 @@
 
 using namespace std;
 
-int main() {
-
-    int count = 1;
+void setMaker() {
+     int count = 1;
     int got;
     int g0 = 0;
     int g1 = 0;
@@ -61,6 +60,11 @@ int main() {
     }
 
     cout << "0: " << g0 << endl << "1: " << g1 << endl << "2: " << g2 << endl << "3: " << g3 << endl << "4: " << g4 << endl;
+}
+
+int main() {
+
+    cout << binoSeries(6, 0.12, 2, 6) << endl;
 
     return 0;
 }
