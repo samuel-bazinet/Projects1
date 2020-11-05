@@ -7,6 +7,9 @@ Here's are the major projects:
 <p>
 CharCount:
     This program will experiment with ways to count characters in a text using various implementations of data structures
+
+Chess:
+    This is simply a recreation of the game of chess
 </p>
 
 Here's a summary of the current standalone programs:
