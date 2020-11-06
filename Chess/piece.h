@@ -5,20 +5,26 @@
 
 #include<string>
 
+struct Position {
+
+    int posX;
+    int posY;
+
+};
+
 class Piece {
 
-    private:
+    protected:
 
         std::string name;
-        int posX;
-        int posY;
+        Position pos;
+        bool is_white;
     
     public:
 
         Piece();
-        void Move(int x, int y);
-
-
+        Piece(std::string n, int x, int y, bool iW);
+        virtual Position move() = 0;
 
 };
 
