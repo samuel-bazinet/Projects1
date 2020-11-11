@@ -21,35 +21,7 @@ int main() {
 
     std::cout << hullo->toString() << std::endl;
 
+    delete hullo;
 
-    //hullo->~DoubLinLis();
-    //hullo = new DoubLinLis();
-/*    string fileName;
-
-    cout << "hello" << endl;
-
-
-
-
-    string line;
-    ifstream myfile("test.txt");
-    if (myfile.is_open()) {
-        while (getline(myfile, line)) {
-            for(char el: line) {
-                hullo.count(el);
-            }
-        }
-        cout << hullo.toString() << endl;
-    }
-    myfile.close(); 
-     
-
-*/
-
-/*
-    for (int i = 0; i < 128; i++) {
-        std::cout << "\"" << char(i) << "\"" << std::endl;
-    }
-*/
     return 0;
 }
