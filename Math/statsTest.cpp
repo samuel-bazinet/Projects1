@@ -64,7 +64,8 @@ void setMaker() {
 
 int main() {
 
-    cout << binoSeries(6, 0.12, 2, 6) << endl;
+    cout << binoSeries(25, 0.2, 6, 6) << endl;
+    cout << factorial(25) << endl;
 
     return 0;
 }

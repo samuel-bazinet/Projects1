@@ -19,6 +19,9 @@ stats.cpp
     Tired of writting the same numbers over and over? 
     This program will help you reduce the amount of time it takes to solve a question
 
+statsTests.cpp 
+    A program to run the stats functions
+
 discTest.cpp
     Just a program to mass test statements
 </p>
