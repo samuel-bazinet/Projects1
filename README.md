@@ -3,7 +3,7 @@ First round of projects
 These projects were done between Oct 2020 and april 2021
 
 <h2>
-    Here's are the major projects:
+    Here are the major projects:
 </h2>
 <h3>
     CharCount:

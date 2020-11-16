@@ -7,10 +7,14 @@ double pow(double a, int x);
 
 long factorial(int n);
 
+long combination(int n, int r);
+
+long optiFact(int n, int r);
+
 double binomial(int n, int x, float Pi) {
     double ans;
 
-    ans = (factorial(n)/(factorial(x)*factorial(n-x)))*pow(Pi,x)*pow(1-Pi,n-x);
+    ans = combination(n,x)*pow(Pi,x)*pow(1-Pi,n-x);
 
     return ans;
 }
@@ -44,4 +48,20 @@ long factorial(int n) {
         return 1;
     }
     return n*factorial(n-1);
+}
+
+long combination(int n, int r) {
+    if ((n - r) > r) {
+        return optiFact(n, n-r) / r;
+    } else {
+        return optiFact(n, r) / (n-r);
+    }
+}
+
+long optiFact(int n, int r) {
+    if (n == r) {
+        return 1;
+    } else {
+        return n*optiFact(n-1, r);
+    }
 }
