@@ -1,16 +1,6 @@
 #include<iostream>
 #include"stats.h"
 
-double binomial(int n, int x, float Pi);
-double binoSeries(int n, float Pi, int s, int e);
-double pow(double a, int x);
-
-long factorial(int n);
-
-long combination(int n, int r);
-
-long optiFact(int n, int r);
-
 double binomial(int n, int x, float Pi) {
     double ans;
 
@@ -43,22 +33,22 @@ double pow(double a, int x) {
     }
 }
 
-long factorial(int n) {
+unsigned int long long factorial(int n) {
     if (n <= 1) {
         return 1;
     }
     return n*factorial(n-1);
 }
 
-long combination(int n, int r) {
+unsigned int long long combination(int n, int r) {
     if ((n - r) > r) {
-        return optiFact(n, n-r) / r;
+        return (optiFact(n, n-r) / factorial(r));
     } else {
-        return optiFact(n, r) / (n-r);
+        return (optiFact(n, r) / factorial(n-r));
     }
 }
 
-long optiFact(int n, int r) {
+unsigned int long long optiFact(int n, int r) {
     if (n == r) {
         return 1;
     } else {
