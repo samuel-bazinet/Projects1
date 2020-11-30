@@ -1,5 +1,7 @@
-#include<iostream>
+
 #include"stats.h"
+
+float variance(float, float, int);
 
 double binomial(int n, int x, float Pi) {
     double ans;
@@ -54,4 +56,39 @@ unsigned int long long optiFact(int n, int r) {
     } else {
         return n*optiFact(n-1, r);
     }
+}
+
+void printUsefulBits() {
+
+    std::string inString;
+    float tot;
+    float totSquare;
+    int n = 0; 
+
+    do {
+        std::cout << "Input val, or 'n' if you want to end: ";
+        std::cin >> inString;
+        if (inString != "n") {
+            n++;
+            tot += std::stof(inString);
+            totSquare += pow(std::stod(inString), 2);
+        }
+
+    } while (inString != "n");
+
+    std::cout << "n: " << n << std::endl;
+    std::cout << "Sum: " << tot << std::endl;
+    std::cout << "Sum of Squares: " << totSquare << std::endl;
+    std::cout << "mean: " << tot/n << std::endl;
+    std::cout << "variance: " << variance(tot, totSquare, n) << std::endl;
+    std::cout << "standard deviation: " << sqrt(variance(tot, totSquare, n)) << std::endl;
+
+
+}   
+
+float variance(float tot, float totSquare, int n) {
+    if (n == 1) {
+        return -1;
+    }
+    return ((totSquare - (pow((double)tot,2)/n))/(n-1));
 }
