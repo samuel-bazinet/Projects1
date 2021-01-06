@@ -24,7 +24,7 @@ class Piece {
 
         Piece();
         Piece(std::string n, int x, int y, bool iW);
-        virtual Position move() = 0;
+        virtual Position * move() = 0;
 
 };
 
