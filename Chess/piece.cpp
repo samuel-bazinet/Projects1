@@ -1,6 +1,4 @@
-#include<iostream>
 #include"pieces.h"
-#include"list.h"
 
 
 Piece::Piece(std::string n, int x, int y, bool iW) {

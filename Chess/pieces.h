@@ -3,9 +3,11 @@
 #ifndef __pieces_h__
 #define __pieces_h__
 
+#include<iostream>
 #include"piece.h"
+#include"list.h"
 
-class Pawn: private virtual Piece {
+class Pawn: public virtual Piece {
 
     public:
 
@@ -15,7 +17,7 @@ class Pawn: private virtual Piece {
 
 };
 
-class Rook: private virtual Piece {
+class Rook: public virtual Piece {
 
     public:
 
@@ -24,7 +26,7 @@ class Rook: private virtual Piece {
 
 };
 
-class Knight: private virtual Piece {
+class Knight: public virtual Piece {
 
     public:
 
@@ -33,7 +35,7 @@ class Knight: private virtual Piece {
 
 };
 
-class Bishop: private virtual Piece {
+class Bishop: public virtual Piece {
 
     public:
 
@@ -42,7 +44,7 @@ class Bishop: private virtual Piece {
 
 };
 
-class Queen: private virtual Piece {
+class Queen: public virtual Piece {
 
     public:
 
@@ -51,7 +53,7 @@ class Queen: private virtual Piece {
 
 };
 
-class King: private virtual Piece {
+class King: public virtual Piece {
 
     public:
 

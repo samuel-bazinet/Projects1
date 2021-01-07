@@ -1,3 +1,4 @@
+#include<iostream>
 #include"list.h"
 
 template <class T>
@@ -41,7 +42,7 @@ void List<T>::add(T el) {
     while (current->next != NULL) {
         current = current->next;
     }   
-    curent->next = newEl;
+    current->next = newEl;
     size++;
 }
 
